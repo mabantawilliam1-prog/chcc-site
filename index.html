@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrative Office - CHCC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.7;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 140px;
+            margin-bottom: 10px;
+        }
+        header h1,
+        header h3 {
+            color: white;
+        }
+        nav {
+            background-color: #005599;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #003366;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e8f0f7;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #005599;
+            margin: 18px 0 8px;
+            font-size: 1.05em;
+        }
+        ul {
+            margin-left: 22px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        li a {
+            color: #005599;
+            text-decoration: none;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        .processing-note {
+            margin-top: 12px;
+            padding: 10px;
+            background: #e8f0f7;
+            border-radius: 5px;
+            font-size: 0.95em;
+            color: #003366;
+        }
+        /* Organizational Chart */
+        .org-chart {
+            overflow-x: auto;
+        }
+        .org-level {
+            margin: 15px 0;
+        }
+        .org-title {
+            font-weight: bold;
+            color: #003366;
+            border-bottom: 2px solid #005599;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .org-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .org-box {
+            background: #e8f0f7;
+            border: 2px solid #003366;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 0.94em;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .contact-info p {
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="chcc.png" alt="Concepcion Holy Cross College Official Logo">
+    <h1>Concepcion Holy Cross College, Inc.</h1>
+    <h3>Administrative Office</h3>
+    <p>"Competence | Holistic Education | Compassion | Commitment"</p>
+</header>
+
+<nav>
+    <a href="#about">Philosophy & VMG</a>
+    <a href="#programs">Programs</a>
+    <a href="#services">Services</a>
+    <a href="#documents">Documents</a>
+    <a href="#orgchart">Org Chart</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="about">
+        <h2>School Philosophy, Vision, Mission & Goals</h2>
+        
+        <h3>SCHOOL PHILOSOPHY</h3>
+        <p>Concepcion Holy Cross College believes in the holistic development of individuals by providing quality education through active participation in the teaching-learning process.</p>
+        
+        <h3>VISION</h3>
+        <p>To become a God-centered learning institution focused on holistic education that forms and educates individuals to be conscientious, compassionate, competent and committed persons towards the development of just and humane society.</p>
+        
+        <h3>MISSION</h3>
+        <p>Concepcion Holy Cross College is an institution for academic and values formation offering relevant learner-centered and value-oriented programs that produce competent persons of character in the service of God and society.</p>
+        
+        <h3>GOALS</h3>
+        <p>The Concepcion Holy Cross College, Inc. is committed to achieve the following goals and objectives in pursuit of its mission:</p>
+    </div>
+
+    <div class="card" id="programs">
+        <h2>Programs Offered</h2>
+
+        <h3>SCHOOL OF TEACHER EDUCATION</h3>
+        <ul>
+<li>Bachelor of Elementary Education Major in General Education</li>
+            <li>Bachelor of Secondary Education Major in English, Filipino, Mathematics and Social Science</li>
+        </ul>
+
+        <h3>SCHOOL OF CRIMINAL JUSTICE EDUCATION</h3>
+        <ul>
+            <li>Bachelor of Science in Criminology</li>
+            <li>Bachelor of Science in Industrial Security Management</li>
+        </ul>
+
+        <h3>SCHOOL OF BUSINESS AND ACCOUNTANCY</h3>
+        <ul>
+            <li>Bachelor of Science in Accountancy</li>
+            <li>Bachelor of Science in Business Administration Major in Financial Management</li>
+        </ul>
+
+        <h3>SCHOOL OF NURSING</h3>
+        <ul>
+            <li>Bachelor of Science in Nursing</li>
+        </ul>
+
+        <h3>SCHOOL OF HOSPITALITY MANAGEMENT</h3>
+        <ul>
+            <li>Bachelor of Science in Hospitality Management</li>
+        </ul>
+
+        <h3>SCHOOL OF COMPUTER STUDIES</h3>
+        <ul>
+            <li>Bachelor of Science in Computer Science</li>
+            <li>Associate in Computer Technology</li>
+        </ul>
+    </div>
+
+    <div class="card" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Issuance of official school documents and clearances</li>
+            <li>Student record management and verification</li>
+            <li>Processing of scholarship applications (TES, TDP, etc.)</li>
+            <li>General inquiries and assistance for students and visitors</li>
+            <li>Distribution of school IDs and materials</li>
+            <li>Document receiving and releasing</li>
+        </ul>
+        <div class="processing-note">
+            ⏱️ <strong>Processing Time:</strong> Please allow 3–5 working days for processing of most documents.
+        </div>
+    </div>
+
+    <div class="card" id="documents">
+        <h2>Forms & Documents</h2>
+        <p>Here are commonly used forms you can view or download:</p>
+        <ul>
+            <li><a href="clearance-form.pdf">📄 Clearance Application Form</a></li>
+            <li><a href="document-request.pdf">📄 Request for School Documents</a></li>
+            <li><a href="scholarship-guidelines.pdf">📄 Scholarship Application Guidelines</a></li>
+        </ul>
+    </div>
+
+    <div class="card" id="orgchart">
+        <h2>Organizational Chart</h2>
+        <p style="margin-bottom:15px;"><strong>Concepcion Holy Cross College, Inc. — Concepcion, Tarlac</strong></p>
+        
+        <div class="org-chart">
+            <!-- Level 1 -->
+            <div class="org-level">
+                <div class="org-title">Level 1 — Governance</div>
+                <div class="org-items">
+                    <div class="org-box">BOARD OF TRUSTEES</div>
+                </div>
+            </div>
+
+            <!-- Level 2 -->
+            <div class="org-level">
+                <div class="org-title">Level 2 — Executive</div>
+                <div class="org-items">
+                    <div class="org-box">SCHOOL PRESIDENT</div>
+                </div>
+            </div>
+
+            <!-- Level 3 -->
+            <div class="org-level">
+                <div class="org-title">Level 3 — President's Office & Vice Presidents</div>
+                <div class="org-items">
+                    <div class="org-box">Assistant to the President's Office<br>(Academic Internal Affairs)</div>
+                    <div class="org-box">1st VICE-PRESIDENT</div>
+                    <div class="org-box">2nd VICE-PRESIDENT</div>
+                    <div class="org-box">Executive Assistant to the<br>President's Office</div>
+                </div>
+            </div>
+
+            <!-- Level 4 -->
+            <div class="org-level">
+                <div class="org-title">Level 4 — Offices & Services</div>
+                <div class="org-items">
+                    <div class="org-box">Chief Librarian</div>
+                    <div class="org-box">Guidance Counselor</div>
+                    <div class="org-box">Comptroller / Secretary</div>
+                    <div class="org-box">Director of Health Services</div>
+                    <div class="org-box">School Principal</div>
+                    <div class="org-box">Cashier</div>
+                    <div class="org-box">Registrar</div>
+                </div>
+            </div>
+
+            <!-- Level 5 -->
+            <div class="org-level">
+                <div class="org-title">Level 5 — Basic Education Administration</div>
+                <div class="org-items">
+                    <div class="org-box">Elementary Head Teacher</div>
+                    <div class="org-box">High School Head Teacher</div>
+                </div>
+            </div>
+
+            <!-- Level 6 -->
+            <div class="org-level">
+                <div class="org-title">Level 6 — Faculty</div>
+                <div class="org-items">
+                    <div class="org-box">Elementary Faculty</div>
+                    <div class="org-box">High School Faculty</div>
+                </div>
+            </div
+Mariz
+<!-- Level 7 -->
+            <div class="org-level">
+                <div class="org-title">Level 7 — General Services</div>
+                <div class="org-items">
+                    <div class="org-box">GENERAL SERVICES</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card contact-info" id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Juan Luna St., Minane, Concepcion, Tarlac</p>
+        <p><strong>Telephone No.:</strong> 045-923-0747</p>
+        <p><strong>Email:</strong> concepcionholycrosscollege@yahoo.com</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Concepcion Holy Cross College, Inc. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
